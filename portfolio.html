@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio d'Ania ADIL, développeuse web et passionnée de cybersécurité.">
+    <title>Portfolio - Ania ADIL</title>
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/portfolio.css">
+    
+</head>
+
+<body>
+
+    <!-- *********************************************************************** Header ***********************************************************************-->
+    
+    <header>
+        <div class="logo">
+            <img src="images/logo ania.png.webp" alt="Logo Ania ADIL">
+        </div>
+        <nav>
+            <!-- Menu -->
+            <ul id="menu">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#a-propos">À propos</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- Conteneur pour l'icône hamburger et le bouton Dark Mode -->
+        <div class="actions">
+            <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        </div>
+    </header>
+    
+    
+    <!-- *********************************************************************** Section d'introduction ***********************************************************************-->
+<section id="accueil" class="intro">
+    <img src="images/WhatsApp Image 2024-10-30 à 12.05.54_f28cdfd4.jpg" alt="Ania ADIL" class="avatar">
+    <div class="presentation">
+        <h1>Coucou, moi c'est Ania ✨ </h1>
+        
+
+        <!-- Nouveau bouton -->
+        <button id="showTextButton" class="show-text-button"><strong> Curieux.se d'en savoir plus sur moi ❔️ Clique ici ❕️</strong></button>
+
+        <!-- Conteneur pour afficher le texte avec l'effet de survol -->
+        <div id="message" class="message-container" style="display: none;">
+            <p> Je suis une passionnée de développement informatique et je cherche un stage de 3 mois minimum à partir de mars 2025, avec une belle opportunité d'alternance pour l'année suivante. </p>
+            
+            <a href="images/CV Ania Adil.pdf" download="CV_Ania_ADIL.pdf" class="cv-button">Mon CV n'attend que vous ! Cliquez pour le télécharger 📄😊 </a>
+        </div>
+       
+    </div>
+</section>
+
+
+
+    <!-- *********************************************************************** Section À propos de moi ***********************************************************************-->
+
+    <section id="a-propos" class="about-me">
+        <h2>À propos de moi</h2>
+        <div class="me">
+        <p>Je suis Ania ADIL, j'ai 19 ans et je suis actuellement en deuxième année de Licence Informatique DANT (Développement d'Applications Nouvelles Technologies) à Sorbonne Université. Passionnée par le développement web et la programmation,
+            Je suis à la recherche d’un stage d'une durée minimale de 3 mois à partir de mars 2025 pour mettre en pratique mes savoir-faire et acquérir une expérience enrichissante dans le domaine professionnel.
+            J'ai fait le choix de faire de l'informatique, car depuis mon plus jeune âge, je trouve une
+            satisfaction particulière au fait de découvrir constamment de nouvelles notions dans un
+            domaine en constante évolution, et de mettre en pratique des connaissances acquises au fur et à mesure du
+            temps.
+        </p>
+        </div>
+    
+        <h2>Formation</h2>
+        <div class="education-container">
+            <div class="education">
+                <div class="education-header">
+                    <img src="images/sorbonne.jpg" alt="Logo Sorbonne Université" class="education-logo">
+                    <h3>Licence Informatique (DANT)</h3>
+                </div>
+                <p>Sorbonne Université - parcours en apprentissage  <em>- Deuxième année, (2024 - Présent)</em></p>
+                <ul>
+                    <li>Développement Web</li>
+                    <li>Systèmes d'exploitation et Shells</li>
+                    <li>Programmation Orientée Objet</li>
+                    <li>Langage C avancé</li>
+                    <li>Programmation fonctionnelle</li>
+                    <li>Mathématiques discrètes</li>
+                    <li>Structures de données</li>
+                    <li>Bases de données</li>
+                </ul>
+            </div>
+            <div class="education">
+                <div class="education-header">
+                    <img src="images/sorbonne.jpg" alt="Logo Sorbonne Université" class="education-logo">
+                    <h3>Portail Sciences Formelles</h3>
+                </div>
+                
+                <p>Sorbonne Université - <em>Première année (2023 - 2024)</em></p>
+                <ul>
+                    <li>Analyse, Algèbre et Probabilités</li>
+                    <li>Data Science</li>
+                    <li>Langage Python et Langage C</li>
+                    <li>Anglais</li>
+                    <li>Innovation et Santé</li>
+                </ul>
+            </div>
+            <div class="education">
+                <h3>Baccalauréat   <em>( Mention Très Bien )</em></h3>
+                <p>Lycée étranger - <em>2023</em></p>
+                <ul>
+                    <li>Spécialité : Mathématiques et Physique-Chimie</li>
+                </ul>
+                
+            </div>
+        </div>
+    
+        <h2>Mes Centres d’intérêt :</h2>
+        <div class="interests-container">
+            <div class="interest">
+                <img src="images/nat.jpg" alt="Natation" class="interest-img">
+                <span>Natation</span>
+            </div>
+            <div class="interest">
+                <img src="images/cybersecu.jpg" alt="Cybersécurité" class="interest-img">
+                <span>Cybersécurité</span>
+            </div>
+            <div class="interest">
+                <img src="images/dev web.jpg" alt="Développement Web" class="interest-img">
+                <span>Développement Web</span>
+            </div>
+            <div class="interest">
+                <img src="images/lecture.jpg" alt="Lecture" class="interest-img">
+                <span>Lecture (romans, blogs tech)</span>
+            </div>
+            <div class="interest">
+                <img src="images/voyage.jpg" alt="Voyages" class="interest-img">
+                <span>Voyages</span>
+            </div>
+
+            
+        </div>
+    </section>
+    
+    
+    
+
+    <!-- ************************************************************************* Section des projets **************************************************************************-->
+
+    <section id="projets" class="projects">
+        <h2>Mes Projets</h2>
+
+        <div class="project-card">
+            <img src="images/ecosys.jpg" alt="Projet Ecosystème">
+            <h3> Projet Ecosystème </h3>
+            <p> Simulation d'un écosystème "Proie - Prédateur" en langage C.</p>
+            <p> Manipulation de fichiers et représentation graphique</p>
+            <a href="ecosys.html">Voir le projet</a>
+        </div>
+
+        <div class="project-card">
+            <img src="images/cv.png" alt="Projet Portfolio">
+            <h3>Portfolio Web</h3>
+            <p>Création d'un portfolio en ligne avec HTML, CSS, JavaScript et Bootstrap.</p>
+            <a href="prpjweb.html">Voir le projet</a>
+        </div>
+
+        <div class="project-card">
+            <img src="images/automate.png" alt="Projet Automates">
+            <h3>Projet Automates</h3>
+            <p>Étude des automates finis et des langages.</p>
+            <p>Création, détermination et opérations sur les automates.</p>
+            <a href="automates.html">Voir le projet</a>
+        </div>
+
+    </section>
+
+
+    <!-- ************************************************************************** Section Compétences **************************************************************************-->
+ 
+    <section id="competences">
+        <h2>Mes Compétences techniques</h2>
+        <div class="competences-container">
+
+        <div class="competence">
+            <img src="images/java.png" alt="Java" class="competence-icon">
+            <h3>Java</h3>
+            <p>Programmation orientée objet pour créer des applications robustes et évolutives.</p>
+        </div>
+        
+        <div class="competence">
+            <img src="images/jupyter.jpg" alt="Jupyter Notebook" class="competence-icon">
+            <h3>Jupyter Notebook</h3>
+            <p>Environnement interactif pour l’analyse de données et les visualisations en Python.</p>
+        </div>
+        
+        <div class="competence">
+            <img src="images/bootstrap.png" alt="Bootstrap" class="competence-icon">
+            <h3>Bootstrap</h3>
+            <p>Création rapide de designs web responsives grâce à ce framework CSS populaire.</p>
+        </div>
+        
+        <div class="competence">
+            <img src="images/ocaml.jpg" alt="OCaml" class="competence-icon">
+            <h3>OCaml</h3>
+            <p>Langage de programmation fonctionnel utilisé pour la résolution de problèmes complexes.</p>
+        </div>
+        
+
+            <!-- HTML -->
+            <div class="competence">
+                <img src="images/html.png" alt="HTML5" class="competence-icon">
+                <h3>HTML5</h3>
+                <p>Langage de balisage structurant le contenu d’une page web. Je maîtrise les balises, les attributs et la structure des pages HTML5.</p>
+            </div>
+
+            <!-- CSS -->
+            <div class="competence">
+                <img src="images/css.png" alt="CSS3" class="competence-icon">
+                <h3>CSS</h3>
+                <p>Je crée des designs modernes et réactifs avec CSS, en utilisant des animations, des flexbox, et le design mobile-first.</p>
+            </div>
+
+            <!-- JavaScript -->
+            <div class="competence">
+                <img src="images/jscript.png" alt="JavaScript" class="competence-icon">
+                <h3>JavaScript</h3>
+                <p>Je développe des interactions dynamiques sur des sites web grâce à JavaScript, en manipulant le DOM et en utilisant les frameworks comme React.</p>
+            </div>
+
+            <!-- Python -->
+            <div class="competence">
+                <img src="images/python.webp" alt="Python" class="competence-icon">
+                <h3>Python</h3>
+                <p>Je programme en Python pour des applications variées, notamment en data science, avec des outils comme Pandas et Matplotlib.</p>
+            </div>
+
+            <!-- SQL -->
+            <div class="competence">
+                <img src="images/MySQL.png" alt="SQL" class="competence-icon">
+                <h3>MySQL</h3>
+                <p>Je conçois et interroge des bases de données relationnelles avec MySQL, en optimisant les requêtes et en manipulant des données volumineuses.</p>
+            </div>
+
+            <!-- Git -->
+            <div class="competence">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/git.svg" alt="Git" class="competence-icon">
+                <h3>Git</h3>
+                <p>Je versionne mon code et gère la collaboration de projets grâce à Git et GitHub, en utilisant des branches et des pull requests.</p>
+            </div>
+
+            <!-- Bash -->
+            <div class="competence">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/gnubash.svg" alt="Bash" class="competence-icon">
+                <h3>Bash</h3>
+                <p>Je crée des scripts Bash pour automatiser des tâches dans les systèmes Unix/Linux, en optimisant les flux de travail.</p>
+            </div>
+
+            <!-- PHP -->
+            <div class="competence">
+                <img src="images/php.png" alt="PHP" class="competence-icon">
+                <h3>PHP</h3>
+                <p>Je développe des applications web dynamiques côté serveur avec PHP, en utilisant des frameworks comme Laravel pour des projets complexes.</p>
+            </div>
+            
+        </div>
+    </section>
+
+
+    <!-- *************************************************************************** Section Contact ***************************************************************************-->
+  
+    <section id="contact" class="contact">
+        <h2>Contactez-moi</h2>
+        <form action="submit_form.php" method="post" id="contact-form">
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+    
+            <label for="email">E-mail :</label>
+            <input type="email" id="email" name="email" placeholder="Votre e-mail" required>
+    
+            <label for="message">Message :</label>
+            <textarea id="contact-message" name="message" placeholder="Votre message" rows="5" required></textarea>
+    
+            <button type="submit">Envoyer</button>
+        </form>
+    
+    
+
+
+
+
+        <div class="reseaux">
+            <h3>Ajoutez-moi sur mes réseaux sociaux</h3>
+            <div class="social-links">
+                <a href="https://github.com/AniaADIL/AniaADIL" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/ania-adil-50a0b3335/" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://x.com/Aniaaaaaaa_" target="_blank" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+  
+    
+    <!-- ***************************************************************************** Footer ***************************************************************************** -->
+    
+    <footer>
+        <nav>
+            <!-- Menu -->
+            <ul id="menu">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#a-propos">À propos</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>   
+        </nav>
+        
+        <p>&copy; 2024 Ania ADIL - Tous droits réservés.</p>
+        <button class="dark-mode" onclick="toggleDarkMode()">Mode sombre ☀️</button>
+
+    </footer>
+
+
+
+
+
+
+
+
+    <script src="scripts/portfolio.js"></script>
+</body>
+</html>
+
+
+  

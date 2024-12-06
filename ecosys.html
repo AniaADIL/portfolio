@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet Automates</title>
+    <link rel="stylesheet" href="styles/ecosys.css">
+</head>
+<body>
+
+    <header>
+        <h1>Simulation d'un Écosystème : Proies et Prédateurs</h1>
+    </header>
+    
+    <section>
+        <div class="content">
+            <h2>Objectifs du Projet</h2>
+            <p>Ce projet vise à simuler un écosystème composé de deux types d'animaux :</p>
+            <ul>
+                <li><strong>Les proies :</strong> Elles perdent de l'énergie au fur et à mesure de leur déplacement et peuvent se reproduire.</li>
+                <li><strong>Les prédateurs :</strong> Ils se nourrissent des proies et augmentent leur énergie lorsqu'ils en mangent.</li>
+            </ul>
+            <p>Les interactions entre ces animaux sont régies par des règles de reproduction, de déplacement et d'énergie.</p>
+        </div>
+    </section>
+    
+    <section>
+        <div class="content">
+            <h2>Fonctions Principales</h2>
+            <p>Voici les principales fonctions utilisées pour modéliser l'écosystème :</p>
+            <h3>1. ecrire_ecosys</h3>
+            <p>Cette fonction écrit l'état actuel de l'écosystème dans un fichier, en sauvegardant les coordonnées, directions et énergies des animaux.</p>
+    
+            <h3>2. lire_ecosys</h3>
+            <p>Cette fonction permet de lire un fichier d'état d'écosystème et de restaurer les listes de proies et prédateurs à partir des données lues.</p>
+    
+            <h3>3. bouger_animaux</h3>
+            <p>Chaque animal se déplace dans la direction spécifiée, en tenant compte de la nature torique du monde.</p>
+    
+            <h3>4. reproduce</h3>
+            <p>Les animaux se reproduisent avec une certaine probabilité, générant de nouveaux animaux avec une énergie partagée.</p>
+    
+            <h3>5. rafraichir_proies & rafraichir_predateurs</h3>
+            <p>Ces fonctions mettent à jour l'état des proies et des prédateurs, en tenant compte de leur énergie, reproduction et alimentation.</p>
+        </div>
+    </section>
+    
+    <section>
+        <div class="content">
+            <h2>Gestion de l'Énergie et des Interactions</h2>
+            <p>Les interactions entre les animaux sont définies par leur énergie :</p>
+            <ul>
+                <li><strong>Proies :</strong> Elles perdent de l'énergie avec le temps et peuvent récupérer de l'énergie en passant sur de l'herbe.</li>
+                <li><strong>Prédateurs :</strong> Ils gagnent de l'énergie en mangeant des proies et peuvent se reproduire lorsqu'ils sont suffisamment nourris.</li>
+            </ul>
+            <p>Les proies sont supprimées lorsque leur énergie est épuisée, tandis que les prédateurs peuvent se reproduire et manger pour maintenir leur énergie.</p>
+        </div>
+    </section>
+    
+    <section>
+        <div class="content">
+            <h2>Sauvegarde et Chargement de l'Écosystème</h2>
+            <p>Le projet permet de sauvegarder l'état actuel de l'écosystème dans un fichier, permettant de suivre l'évolution au fil du temps. Ce fichier peut ensuite être utilisé pour recharger l'écosystème dans son état précédent et observer les effets des changements de paramètres.</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="detail">
+        <h2>Détails techniques</h2>
+        <ul>
+            <li><strong>Date :</strong> Novembre 2024</li>
+            <li><strong>Technologies :</strong> Python, Jupyter Notebook, JFLAP, Graphviz</li>
+            <li><strong>Lien vers le code :</strong> <a href="https://github.com/AniaADIL/Projet-Ecosysteme" target="_blank">GitHub</a></li>
+        </ul>
+    </div>
+    </section>
+
+    
+    <footer>
+        <a href="portfolio.html" class="back-to-home" title="Retour à l'accueil">🏠</a>
+    </footer>
+    
+    
+    </body>
+    </html>
